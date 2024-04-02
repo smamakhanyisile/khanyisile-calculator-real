@@ -1,0 +1,47 @@
+.calculator {
+    width: 200px;
+    border: 2px solid #180505;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: plum;
+    position: relative;
+    margin-left: 500px;
+  
+ .calculator {
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 10px;
+        animation: rotateName 5s infinite alternate;
+  }
+  
+
+ @keyframes rotateName {
+        from { transform: rotate(-5deg); }
+        to { transform: rotate(5deg); }
+  }
+  
+  #display {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
